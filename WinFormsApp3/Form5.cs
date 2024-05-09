@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace WinFormsApp3
 {
-    public partial class Form2 : Form
+    public partial class Form5 : Form
     {
-        public Form2()
+        public Form5()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

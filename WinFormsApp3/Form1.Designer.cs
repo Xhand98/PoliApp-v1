@@ -75,7 +75,7 @@
             sidePanel.Dock = DockStyle.Left;
             sidePanel.Location = new Point(0, 0);
             sidePanel.Name = "sidePanel";
-            sidePanel.Size = new Size(200, 521);
+            sidePanel.Size = new Size(200, 679);
             sidePanel.TabIndex = 1;
             // 
             // logOut
@@ -93,7 +93,8 @@
             // pictureBox2
             // 
             pictureBox2.Cursor = Cursors.Hand;
-            pictureBox2.Location = new Point(128, 481);
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(150, 631);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(33, 36);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -250,7 +251,7 @@
             mainCont.Font = new Font("Javanese Text", 32F, FontStyle.Bold);
             mainCont.Location = new Point(200, 0);
             mainCont.Name = "mainCont";
-            mainCont.Size = new Size(901, 521);
+            mainCont.Size = new Size(1185, 679);
             mainCont.TabIndex = 2;
             mainCont.Paint += mainCont_Paint_1;
             // 
@@ -314,7 +315,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1101, 521);
+            ClientSize = new Size(1385, 679);
             Controls.Add(mainCont);
             Controls.Add(sidePanel);
             FormBorderStyle = FormBorderStyle.FixedSingle;

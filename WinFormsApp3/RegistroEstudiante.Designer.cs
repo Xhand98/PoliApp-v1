@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp3
 {
-    partial class Form4
+    partial class RegistroEstudiante
     {
         /// <summary>
         /// Required designer variable.
@@ -28,37 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label4 = new Label();
+            textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // label4
+            // textBox1
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
-            label4.ForeColor = SystemColors.ButtonHighlight;
-            label4.Location = new Point(179, 68);
-            label4.Name = "label4";
-            label4.Size = new Size(606, 39);
-            label4.TabIndex = 6;
-            label4.Text = "Herramientas manejo de estudiantes";
+            textBox1.Location = new Point(541, 431);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(181, 27);
+            textBox1.TabIndex = 0;
             // 
-            // Form4
+            // RegistroEstudiante
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(29, 31, 48);
-            ClientSize = new Size(1122, 538);
-            Controls.Add(label4);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Form4";
-            Text = "Form4";
-            TopMost = true;
+            ClientSize = new Size(1152, 528);
+            Controls.Add(textBox1);
+            Name = "RegistroEstudiante";
+            Text = "RegistroEstudiante";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Label label4;
+
+        private TextBox textBox1;
     }
 }

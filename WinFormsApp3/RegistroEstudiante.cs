@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace WinFormsApp3
 {
-    public partial class Form2 : Form
+    public partial class RegistroEstudiante : Form
     {
-        public Form2()
+        public RegistroEstudiante()
         {
             InitializeComponent();
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

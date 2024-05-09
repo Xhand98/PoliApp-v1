@@ -38,11 +38,7 @@ namespace WinFormsApp3
 
         private void btnPro_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Form2());
-            appTitle.Hide();
-            fastAcc.Hide();
-            presentTxt.Hide();
-            subMenuPro.Visible = true;
+            AbrirFormHijo(new Form5());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -57,7 +53,7 @@ namespace WinFormsApp3
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-
+            AbrirFormHijo(new Form2());
         }
 
         private void appTitle_Click(object sender, EventArgs e)
@@ -84,6 +80,11 @@ namespace WinFormsApp3
             this.mainCont.Tag = fH;
             fH.Show();
             formActual = fH as Form;
+            appTitle.Hide();
+            fastAcc.Hide();
+            presentTxt.Hide();
+            subMenuPro.Visible = true;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -106,10 +107,7 @@ namespace WinFormsApp3
 
         private void btnEst_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new Form4());
-            appTitle.Hide();
-            presentTxt.Hide();
-            fastAcc.Hide();
+            AbrirFormHijo(new Form6());
         }
     }
 }

@@ -36,10 +36,22 @@
             pictureBox2 = new PictureBox();
             label3 = new Label();
             panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
+            pictureBox3 = new PictureBox();
+            label4 = new Label();
+            panel5 = new Panel();
+            pictureBox4 = new PictureBox();
+            label5 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -48,11 +60,11 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(248, 65);
+            label1.Location = new Point(158, 91);
             label1.Name = "label1";
-            label1.Size = new Size(591, 39);
+            label1.Size = new Size(345, 39);
             label1.TabIndex = 0;
-            label1.Text = "Herramientas manejo de profesores";
+            label1.Text = "Herramientas Admin";
             // 
             // panel1
             // 
@@ -61,10 +73,11 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label2);
             panel1.Cursor = Cursors.Hand;
-            panel1.Location = new Point(97, 187);
+            panel1.Location = new Point(59, 228);
             panel1.Name = "panel1";
             panel1.Size = new Size(250, 125);
             panel1.TabIndex = 1;
+            panel1.Paint += panel1_Paint;
             // 
             // pictureBox1
             // 
@@ -117,10 +130,91 @@
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label3);
             panel2.Cursor = Cursors.Hand;
-            panel2.Location = new Point(604, 187);
+            panel2.Location = new Point(586, 228);
             panel2.Name = "panel2";
             panel2.Size = new Size(250, 121);
             panel2.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(panel5);
+            panel3.Controls.Add(panel4);
+            panel3.Controls.Add(label1);
+            panel3.Controls.Add(panel2);
+            panel3.Controls.Add(panel1);
+            panel3.Dock = DockStyle.Fill;
+            panel3.Location = new Point(0, 0);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(1130, 542);
+            panel3.TabIndex = 3;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(65, 57, 85);
+            panel4.BorderStyle = BorderStyle.FixedSingle;
+            panel4.Controls.Add(pictureBox3);
+            panel4.Controls.Add(label4);
+            panel4.Cursor = Cursors.Hand;
+            panel4.Location = new Point(59, 388);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(287, 125);
+            panel4.TabIndex = 3;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(14, 38);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(46, 48);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox3.TabIndex = 1;
+            pictureBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Inter", 11F, FontStyle.Bold);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(66, 48);
+            label4.Name = "label4";
+            label4.Size = new Size(198, 23);
+            label4.TabIndex = 0;
+            label4.Text = "Registrar estudiante";
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(65, 57, 85);
+            panel5.BorderStyle = BorderStyle.FixedSingle;
+            panel5.Controls.Add(pictureBox4);
+            panel5.Controls.Add(label5);
+            panel5.Cursor = Cursors.Hand;
+            panel5.Location = new Point(586, 388);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(287, 125);
+            panel5.TabIndex = 4;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(14, 38);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(46, 48);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 1;
+            pictureBox4.TabStop = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Inter", 11F, FontStyle.Bold);
+            label5.ForeColor = SystemColors.Control;
+            label5.Location = new Point(66, 48);
+            label5.Name = "label5";
+            label5.Size = new Size(188, 23);
+            label5.TabIndex = 0;
+            label5.Text = "Manejar estudiante";
             // 
             // Form2
             // 
@@ -128,9 +222,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(29, 31, 48);
             ClientSize = new Size(1130, 542);
-            Controls.Add(panel2);
-            Controls.Add(panel1);
-            Controls.Add(label1);
+            Controls.Add(panel3);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form2";
             Text = "Form2";
@@ -141,8 +233,15 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -154,5 +253,12 @@
         private PictureBox pictureBox2;
         private Label label3;
         private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
+        private PictureBox pictureBox3;
+        private Label label4;
+        private Panel panel5;
+        private PictureBox pictureBox4;
+        private Label label5;
     }
 }
