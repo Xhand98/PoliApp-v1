@@ -1,7 +1,10 @@
+using Windows_Forms_Prueba;
+
 namespace WinFormsApp3
 {
     public partial class GradeMaster : Form
     {
+        private bool isLogged = false;
         public GradeMaster()
         {
             InitializeComponent();
@@ -9,8 +12,22 @@ namespace WinFormsApp3
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (!isLogged)
+            {
+                regBtn.Hide();
+                logBtn.Hide();
+                notLogged.Hide();
+                Application.Exit();
+                RegisterLogin registerLogin = new RegisterLogin();
+                registerLogin.Show();
+            }
         }
+
+        public bool IsUserLogged()
+        {
+            return isLogged;
+        }
+
 
         private void mainCont_Paint(object sender, PaintEventArgs e)
         {

@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp3
+﻿ namespace WinFormsApp3
 {
     internal class Inicio
     {

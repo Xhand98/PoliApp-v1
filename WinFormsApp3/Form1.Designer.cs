@@ -51,6 +51,9 @@
             appTitle = new Label();
             contextMenuStrip3 = new ContextMenuStrip(components);
             profesoresToolStripMenuItem = new ToolStripMenuItem();
+            notLogged = new Label();
+            regBtn = new Button();
+            logBtn = new Button();
             sidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             subMenuPro.SuspendLayout();
@@ -244,6 +247,9 @@
             // 
             mainCont.AllowDrop = true;
             mainCont.BackColor = Color.FromArgb(49, 66, 82);
+            mainCont.Controls.Add(logBtn);
+            mainCont.Controls.Add(regBtn);
+            mainCont.Controls.Add(notLogged);
             mainCont.Controls.Add(fastAcc);
             mainCont.Controls.Add(presentTxt);
             mainCont.Controls.Add(appTitle);
@@ -311,6 +317,48 @@
             profesoresToolStripMenuItem.Size = new Size(147, 24);
             profesoresToolStripMenuItem.Text = "Profesores";
             // 
+            // notLogged
+            // 
+            notLogged.AutoSize = true;
+            notLogged.BackColor = Color.Transparent;
+            notLogged.Font = new Font("Inter", 16F, FontStyle.Bold);
+            notLogged.ForeColor = SystemColors.ButtonHighlight;
+            notLogged.Location = new Point(241, 202);
+            notLogged.Name = "notLogged";
+            notLogged.Size = new Size(394, 33);
+            notLogged.TabIndex = 3;
+            notLogged.Text = "No has entrado en tu cuenta.";
+            // 
+            // regBtn
+            // 
+            regBtn.BackColor = Color.FromArgb(65, 57, 85);
+            regBtn.Cursor = Cursors.Hand;
+            regBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            regBtn.FlatStyle = FlatStyle.Flat;
+            regBtn.Font = new Font("Inter", 12F, FontStyle.Bold);
+            regBtn.ForeColor = SystemColors.Control;
+            regBtn.Location = new Point(116, 265);
+            regBtn.Name = "regBtn";
+            regBtn.Size = new Size(195, 47);
+            regBtn.TabIndex = 8;
+            regBtn.Text = "Registrarse";
+            regBtn.UseVisualStyleBackColor = false;
+            // 
+            // logBtn
+            // 
+            logBtn.BackColor = Color.FromArgb(65, 57, 85);
+            logBtn.Cursor = Cursors.Hand;
+            logBtn.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 80, 200);
+            logBtn.FlatStyle = FlatStyle.Flat;
+            logBtn.Font = new Font("Inter", 12F, FontStyle.Bold);
+            logBtn.ForeColor = SystemColors.Control;
+            logBtn.Location = new Point(466, 263);
+            logBtn.Name = "logBtn";
+            logBtn.Size = new Size(195, 47);
+            logBtn.TabIndex = 9;
+            logBtn.Text = "Iniciar sesión";
+            logBtn.UseVisualStyleBackColor = false;
+            // 
             // GradeMaster
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -356,5 +404,8 @@
         private Label fastAcc;
         private Label appTitle;
         private Label logOut;
+        private Label notLogged;
+        private Button regBtn;
+        private Button logBtn;
     }
 }
